@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=DM+Sans:wght@400;500&family=DM+Serif+Text&family=Gideon+Roman&family=Goldman&family=Lato:wght@300;400&family=Lora&family=Open+Sans:wght@400;500&family=Oswald:wght@300;500&family=PT+Sans&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* width */
+::-webkit-scrollbar {
+    width: 14px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #313131;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(116, 26, 53);
+    border-radius: 10px;
+  }
+  
+
+body{
+    font-family: 'PT Sans', sans-serif;
+}
+.swiper-button-next,
+.swiper-button-prev {
+    background-color: white;
+    background-color: transparent;
+    right:10px;
+    padding: 30px;
+    color: rgb(209, 45, 81) !important;
+    fill: black !important;
+    stroke: black !important;
+}
+.swiper-pagination-bullet {
+  background-color: rgb(147, 147, 147) !important;
+  width: 0.6rem !important;
+  height: 0.6rem !important;
+  border-radius: .5rem;
+}
+.swiper-pagination-bullet-active {
+  background-color: rgb(188, 38, 78) !important;
+  width: 0.6rem !important;
+  height: 0.6rem !important;
+  border-radius: .5rem;
+}
+@layer components{
+  .contactInput{
+    @apply outline-none px-4 py-3 bg-[#350e1b] rounded-sm text-[#c5c5c5] text-lg placeholder-[#68505a]
+  }
+}
+
+
