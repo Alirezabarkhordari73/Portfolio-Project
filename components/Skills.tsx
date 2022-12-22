@@ -12,6 +12,7 @@ import ProgressBar from "./ProgressBar";
 import GitLogo from "../assets/images/GitLogo.png";
 import MuiLogo from "../assets/images/MuiLogo.png";
 import SassLogo from "../assets/images/SassLogo.png";
+import ReduxLogo from "../assets/images/ReduxLogo.png";
 
 type Props = {};
 
@@ -130,6 +131,15 @@ const Skills = (props: Props) => {
               alt="skills-img"
               className="h-[60px] w-[60px] cursor-pointer"
               onMouseEnter={() => showProgressHandler("65")}
+              onMouseLeave={() => hideProgressHandler("0")}
+            />
+            <Image
+              src={ReduxLogo.src}
+              width={60}
+              height={70}
+              alt="skills-img"
+              className="h-[60px] w-[60px] cursor-pointer"
+              onMouseEnter={() => showProgressHandler("75")}
               onMouseLeave={() => hideProgressHandler("0")}
             />
           </div>

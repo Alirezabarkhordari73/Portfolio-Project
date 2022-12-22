@@ -39,7 +39,7 @@ const Experiense = (props: Props) => {
             1280: { slidesPerView: 3, spaceBetween: 15 },
           }}>
           <SwiperSlide className="flex justify-center items-center">
-            <div className="bg-[#20050c] w-[450px] h-[650px] text-stone-100 rounded-md hover:bg-[#220912] transition duration-200 opacity-40 hover:opacity-100 flex flex-col items-center justify-start p-10 border-[1px] border-[#ff5454]">
+            <div className="bg-[#20050c] w-[410px] h-[610px] text-stone-100 rounded-md hover:bg-[#220912] transition duration-200 opacity-40 hover:opacity-100 flex flex-col items-center justify-start p-10 border-[1px] border-[#ff5454]">
               <Image
                 src={img.src}
                 alt="company-img"
@@ -70,7 +70,7 @@ const Experiense = (props: Props) => {
             </div>
           </SwiperSlide>
           <SwiperSlide className="flex justify-center items-center">
-            <div className="bg-[#20050c] w-[450px] h-[650px] text-stone-100 rounded-md hover:bg-[#220912] transition duration-200 opacity-40 hover:opacity-100 flex flex-col items-center justify-start p-10 border-[1px] border-[#ff5454]">
+            <div className="bg-[#20050c] w-[410px] h-[610px] text-stone-100 rounded-md hover:bg-[#220912] transition duration-200 opacity-40 hover:opacity-100 flex flex-col items-center justify-start p-10 border-[1px] border-[#ff5454]">
               <Image
                 src={AmytisLogo.src}
                 alt="company-img"
@@ -101,7 +101,7 @@ const Experiense = (props: Props) => {
             </div>
           </SwiperSlide>
           <SwiperSlide className="flex justify-center items-center">
-            <div className="bg-[#20050c] w-[450px] h-[650px] text-stone-100 rounded-md hover:bg-[#220912] transition duration-200 opacity-40 hover:opacity-100 flex flex-col items-center justify-start p-10 border-[1px] border-[#ff5454]">
+            <div className="bg-[#20050c] w-[410px] h-[610px] text-stone-100 rounded-md hover:bg-[#220912] transition duration-200 opacity-40 hover:opacity-100 flex flex-col items-center justify-start p-10 border-[1px] border-[#ff5454]">
               <Image
                 src={img.src}
                 alt="company-img"
