@@ -9,44 +9,45 @@ type Props = {};
 
 const Header = (props: Props) => {
   return (
-    <div className="top-0 sticky flex items-start justify-between mx-auto max-w-7xl z-50 p-5">
+    <div className="top-0 sticky flex items-start justify-between mx-auto max-w-7xl z-50 px-5 py-1">
       <motion.div
         initial={{ x: -500, opacity: 0, scale: 0.5 }}
         animate={{ x: 0, opacity: 1, scale: 1 }}
-        transition={{ duration: 1 }}>
+        transition={{ duration: 1 }}
+      >
         <SocialIcon
           url="https://www.instagram.com/aliiiii_reza73/"
-          bgColor="#0f0408"
+          bgColor="#080714"
           fgColor="#EEEEEE"
           style={{ height: 43, width: 43 }}
         />
         <SocialIcon
           url="https://www.facebook.com/alireza.barkhordari.16/"
-          bgColor="#0f0408"
+          bgColor="#080714"
           fgColor="#EEEEEE"
           style={{ height: 43, width: 43 }}
         />
         <SocialIcon
           url="https://www.youtube.com/"
-          bgColor="#0f0408"
+          bgColor="#080714"
           fgColor="#EEEEEE"
           style={{ height: 43, width: 43 }}
         />
         <SocialIcon
           url="https://twitter.com/"
-          bgColor="#0f0408"
+          bgColor="#080714"
           fgColor="#EEEEEE"
           style={{ height: 43, width: 43 }}
         />
         <SocialIcon
           url="https://www.linkedin.com/"
-          bgColor="#0f0408"
+          bgColor="#080714"
           fgColor="#EEEEEE"
           style={{ height: 43, width: 43 }}
         />
         <SocialIcon
           url="https://github.com/Alirezabarkhordari73"
-          bgColor="#0f0408"
+          bgColor="#080714"
           fgColor="#EEEEEE"
           style={{ height: 43, width: 43 }}
         />
@@ -56,7 +57,8 @@ const Header = (props: Props) => {
         className="flex items-center gap-3 text-white"
         initial={{ x: 500, opacity: 0, scale: 0.5 }}
         animate={{ x: 0, opacity: 1, scale: 1 }}
-        transition={{ duration: 1 }}>
+        transition={{ duration: 1 }}
+      >
         <Image
           src={myAvatarPic}
           alt="user-avatar-pic"

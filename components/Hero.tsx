@@ -27,7 +27,7 @@ export default function Hero({}: Props) {
       </p>
       <h1 className="text-white text-xl md:text-3xl lg:text-6xl drop-shadow-sm">
         <span className="font-bold tracking-widest">{text}</span>
-        <Cursor cursorColor="#FF206A" />
+        <Cursor cursorColor="#696bff" />
       </h1>
     </div>
   );

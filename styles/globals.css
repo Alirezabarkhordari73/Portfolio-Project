@@ -6,17 +6,17 @@
 
 /* width */
 ::-webkit-scrollbar {
-    width: 14px;
+    width: 12px;
   }
   
   /* Track */
   ::-webkit-scrollbar-track {
-    background: #313131;
+    background: #17171b;
   }
   
   /* Handle */
   ::-webkit-scrollbar-thumb {
-    background: rgb(116, 26, 53);
+    background: #343568;
     border-radius: 10px;
   }
   
@@ -30,7 +30,7 @@ body{
     background-color: transparent;
     right:10px;
     padding: 30px;
-    color: rgb(209, 45, 81) !important;
+    color: #696bff !important;
     fill: black !important;
     stroke: black !important;
 }
@@ -41,14 +41,14 @@ body{
   border-radius: .5rem;
 }
 .swiper-pagination-bullet-active {
-  background-color: rgb(188, 38, 78) !important;
+  background-color: #696bff !important;
   width: 0.6rem !important;
   height: 0.6rem !important;
   border-radius: .5rem;
 }
 @layer components{
   .contactInput{
-    @apply outline-none px-4 py-3 bg-[#350e1b] rounded-sm text-[#c5c5c5] text-lg placeholder-[#68505a]
+    @apply outline-none px-4 py-3 bg-[#1a1b30] rounded-sm text-[#c5c5c5] text-lg placeholder-[#676772]
   }
 }
 

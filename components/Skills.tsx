@@ -13,6 +13,7 @@ import GitLogo from "../assets/images/GitLogo.png";
 import MuiLogo from "../assets/images/MuiLogo.png";
 import SassLogo from "../assets/images/SassLogo.png";
 import ReduxLogo from "../assets/images/ReduxLogo.png";
+import CLogo from "../assets/images/CLogo.png";
 
 type Props = {};
 
@@ -142,11 +143,20 @@ const Skills = (props: Props) => {
               onMouseEnter={() => showProgressHandler("75")}
               onMouseLeave={() => hideProgressHandler("0")}
             />
+            <Image
+              src={CLogo.src}
+              width={70}
+              height={70}
+              alt="skills-img"
+              className="h-[60px] w-[60px] cursor-pointer"
+              onMouseEnter={() => showProgressHandler("75")}
+              onMouseLeave={() => hideProgressHandler("0")}
+            />
           </div>
         </div>
-        <div className="flex items-center w-[95%] md:w-[40%] mt-16">
+        {/* <div className="flex items-center w-[95%] md:w-[40%] mt-16">
           <ProgressBar progress={progressBarValue} isRunning={isRunning} />
-        </div>
+        </div> */}
       </div>
     </div>
   );

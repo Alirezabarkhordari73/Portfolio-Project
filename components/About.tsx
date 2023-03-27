@@ -32,7 +32,7 @@ export default function About({}: Props) {
         <div className="flex flex-col items-center space-y-8 text-white lg:items-start">
           <div className="text-lg md:text-xl font-semibold tracking-[5px] mt-10">
             {text}
-            <Cursor cursorColor="#FF206A" />
+            <Cursor cursorColor="#696bff" />
           </div>
           <p className="text-stone-100 text-base md:text-lg text-center lg:text-left">
             Hello! I’m Alireza Barkhordari. Web Developer with over 1 years of
@@ -44,8 +44,8 @@ export default function About({}: Props) {
           <ul className="flex flex-col justify-start items-center text-left lg:text-center lg:items-start w-full space-y-3">
             <li>
               <span className="flex space-x-5">
-                <AiOutlineMail className="text-lg animate-pulse md:text-xl text-[#ff3f7c]" />
-                <p className="text-[#ff3f7c] tracking-[1px]">
+                <AiOutlineMail className="text-lg animate-pulse md:text-xl text-[#696bff]" />
+                <p className="text-[#696bff] tracking-[1px]">
                   <span className="text-white uppercase">Email :</span>{" "}
                   aliirezaa.barkhordarii@gmail.com
                 </p>
@@ -53,8 +53,8 @@ export default function About({}: Props) {
             </li>
             <li>
               <span className="flex space-x-5">
-                <BsTelephoneInbound className="text-lg animate-pulse md:text-xl text-[#ff3f7c]" />
-                <p className="text-[#ff3f7c] tracking-[1px]">
+                <BsTelephoneInbound className="text-lg animate-pulse md:text-xl text-[#6a6cff]" />
+                <p className="text-[#696bff] tracking-[1px]">
                   <span className="text-white uppercase">Phone :</span>{" "}
                   09337756404
                 </p>
@@ -62,12 +62,13 @@ export default function About({}: Props) {
             </li>
             <li>
               <span className="flex space-x-5">
-                <AiFillGithub className="text-lg animate-pulse md:text-xl text-[#ff3f7c]" />
-                <p className="text-[#ff3f7c] tracking-[1px]">
+                <AiFillGithub className="text-lg animate-pulse md:text-xl text-[#696bff]" />
+                <p className="text-[#696bff] tracking-[1px]">
                   <span className="text-white uppercase">Github :</span>{" "}
                   <a
                     href="https://github.com/Alirezabarkhordari73"
-                    className="cursor-pointer">
+                    className="cursor-pointer"
+                  >
                     https://github.com/Alirezabarkhordari73
                   </a>
                 </p>

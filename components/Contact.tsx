@@ -13,13 +13,13 @@ const Contact = (props: Props) => {
       </h3>
       <h2 className="text-stone-100 absolute top-48 text-lg lg:text-2xl tracking-[1px]">
         If you consider About my resume please{" "}
-        <span className="text-[#da1b64] uppercase">contact to me</span>
+        <span className="text-[#696bff] uppercase">contact to me</span>
       </h2>
       <ul className="flex absolute top-64 flex-col justify-start items-center text-left w-full space-y-3">
         <li>
           <span className="flex space-x-5">
-            <AiOutlineMail className="text-base md:text-xl text-[#da1b64] animate-pulse" />
-            <p className="text-[#ff3f7c] text-lg tracking-[1px]">
+            <AiOutlineMail className="text-base md:text-xl text-[#696bff] animate-pulse" />
+            <p className="text-[#696bff] text-lg tracking-[1px]">
               <span className="text-white uppercase text-lg mr-2">Email :</span>{" "}
               aliirezaa.barkhordarii@gmail.com
             </p>
@@ -27,8 +27,8 @@ const Contact = (props: Props) => {
         </li>
         <li>
           <span className="flex space-x-5">
-            <BsTelephoneInbound className="text-base md:text-xl text-[#da1b64] animate-pulse" />
-            <p className="text-[#ff3f7c] text-lg tracking-[1px]">
+            <BsTelephoneInbound className="text-base md:text-xl text-[#696bff] animate-pulse" />
+            <p className="text-[#696bff] text-lg tracking-[1px]">
               <span className="text-white uppercase text-lg mr-2">Phone :</span>{" "}
               09337756404
             </p>
@@ -36,8 +36,8 @@ const Contact = (props: Props) => {
         </li>
         <li>
           <span className="flex space-x-5">
-            <GoLocation className="text-base md:text-xl text-[#da1b64] animate-pulse" />
-            <p className="text-[#ff3f7c] text-lg tracking-[1px]">
+            <GoLocation className="text-base md:text-xl text-[#696bff] animate-pulse" />
+            <p className="text-[#696bff] text-lg tracking-[1px]">
               <span className="text-white uppercase text-lg mr-2">
                 Location :
               </span>{" "}
@@ -53,7 +53,7 @@ const Contact = (props: Props) => {
         </div>
         <input placeholder="Subject" className="contactInput" />
         <textarea placeholder="Message" className="contactInput" />
-        <button className="py-5 px-4 bg-[#c41659] rounded-md text-black text-xl font-bold">
+        <button className="py-5 px-4 bg-[#696bff] rounded-md text-black text-xl font-bold">
           Submit
         </button>
       </form>
