@@ -57,7 +57,7 @@ const Contact = (props: Props) => {
         </div>
         <input placeholder="Subject" className="contactInput" />
         <textarea placeholder="Message" className="contactInput" />
-        <button className="py-5 px-4 bg-[#696bff] rounded-md text-black text-xl font-bold">
+        <button className="py-5 px-4 bg-[#696bff] rounded-md dark:text-[#fff] text-black text-xl font-bold">
           Submit
         </button>
       </form>
