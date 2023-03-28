@@ -70,12 +70,14 @@ const Header = (props: Props) => {
         <h3 className="text-md dark:text-[#fff] text-[#000] md:text-lg tracking-[1px]">
           Alireza Barkhordari
         </h3>
-        {theme === "dark" ? (
+        {theme === "dark" && (
           <BsSun
             className="dark:text-[#ffda38] text-[#000] text-[1.7rem] cursor-pointer"
             onClick={() => toggleTheme()}
           />
-        ) : (
+        )}
+
+        {theme === "light" && (
           <BsMoonStars
             className="dark:text-[#fff] text-[#1b3eaf] text-[1.6rem] cursor-pointer"
             onClick={() => toggleTheme()}

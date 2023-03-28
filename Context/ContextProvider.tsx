@@ -7,7 +7,7 @@ type ContextType = {
 };
 
 export const ThemeContext = createContext<ContextType>({
-  theme: "light",
+  theme: "dark",
   toggleTheme: () => {},
 });
 
@@ -17,10 +17,6 @@ export const ThemeProvider: FC<{ children: ReactNode }> = ({ children }) => {
       (localStorage.getItem("theme") as "light" | "dark")) ||
       "dark"
   );
-
-  useEffect(() => {
-    localStorage.setItem("theme", "light");
-  }, []);
 
   const toggleTheme = (): void => {
     const val = theme === "light" ? "dark" : "light";
