@@ -29,12 +29,12 @@ export default function About({}: Props) {
           viewport={{ once: true }}
           className="w-[150px] h-[150px] rounded-full object-cover lg:w-[400px] lg:h-[500px] lg:rounded-md"
         />
-        <div className="flex flex-col items-center space-y-8 text-white lg:items-start">
+        <div className="flex flex-col items-center space-y-8 dark:text-[#fff] text-[#1f1f1f] lg:items-start">
           <div className="text-lg md:text-xl font-semibold tracking-[5px] mt-10">
             {text}
             <Cursor cursorColor="#696bff" />
           </div>
-          <p className="text-stone-100 text-base md:text-lg text-center lg:text-left">
+          <p className="dark:text-[#fff] text-[#1f1f1f] text-base md:text-lg text-center lg:text-left">
             Hello! I’m Alireza Barkhordari. Web Developer with over 1 years of
             experience. Experienced with all stages of the development cycle for
             dynamic web projects. Having an in-depth knowledge including
@@ -46,7 +46,9 @@ export default function About({}: Props) {
               <span className="flex space-x-5">
                 <AiOutlineMail className="text-lg animate-pulse md:text-xl text-[#696bff]" />
                 <p className="text-[#696bff] tracking-[1px]">
-                  <span className="text-white uppercase">Email :</span>{" "}
+                  <span className="dark:text-[#fff] text-[#1f1f1f] uppercase">
+                    Email :
+                  </span>{" "}
                   aliirezaa.barkhordarii@gmail.com
                 </p>
               </span>
@@ -55,7 +57,9 @@ export default function About({}: Props) {
               <span className="flex space-x-5">
                 <BsTelephoneInbound className="text-lg animate-pulse md:text-xl text-[#6a6cff]" />
                 <p className="text-[#696bff] tracking-[1px]">
-                  <span className="text-white uppercase">Phone :</span>{" "}
+                  <span className="dark:text-[#fff] text-[#1f1f1f] uppercase">
+                    Phone :
+                  </span>{" "}
                   09337756404
                 </p>
               </span>
@@ -64,7 +68,9 @@ export default function About({}: Props) {
               <span className="flex space-x-5">
                 <AiFillGithub className="text-lg animate-pulse md:text-xl text-[#696bff]" />
                 <p className="text-[#696bff] tracking-[1px]">
-                  <span className="text-white uppercase">Github :</span>{" "}
+                  <span className="dark:text-[#fff] text-[#1f1f1f] uppercase">
+                    Github :
+                  </span>{" "}
                   <a
                     href="https://github.com/Alirezabarkhordari73"
                     className="cursor-pointer"

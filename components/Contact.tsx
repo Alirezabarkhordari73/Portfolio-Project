@@ -8,10 +8,10 @@ type Props = {};
 const Contact = (props: Props) => {
   return (
     <div className="h-screen relative flex flex-col items-center justify-center">
-      <h3 className="uppercase text-[#7b5f2b] tracking-[15px] text-2xl absolute top-28">
+      <h3 className="uppercase text-[#8b6c31] tracking-[15px] text-2xl absolute top-28">
         Contact
       </h3>
-      <h2 className="text-stone-100 absolute top-48 text-lg lg:text-2xl tracking-[1px]">
+      <h2 className="dark:text-[#fff] text-[#1f1f1f] absolute top-48 text-lg lg:text-2xl tracking-[1px]">
         If you consider About my resume please{" "}
         <span className="text-[#696bff] uppercase">contact to me</span>
       </h2>
@@ -20,7 +20,9 @@ const Contact = (props: Props) => {
           <span className="flex space-x-5">
             <AiOutlineMail className="text-base md:text-xl text-[#696bff] animate-pulse" />
             <p className="text-[#696bff] text-lg tracking-[1px]">
-              <span className="text-white uppercase text-lg mr-2">Email :</span>{" "}
+              <span className="dark:text-[#fff] text-[#1f1f1f] uppercase text-lg mr-2">
+                Email :
+              </span>{" "}
               aliirezaa.barkhordarii@gmail.com
             </p>
           </span>
@@ -29,7 +31,9 @@ const Contact = (props: Props) => {
           <span className="flex space-x-5">
             <BsTelephoneInbound className="text-base md:text-xl text-[#696bff] animate-pulse" />
             <p className="text-[#696bff] text-lg tracking-[1px]">
-              <span className="text-white uppercase text-lg mr-2">Phone :</span>{" "}
+              <span className="dark:text-[#fff] text-[#1f1f1f] uppercase text-lg mr-2">
+                Phone :
+              </span>{" "}
               09337756404
             </p>
           </span>
@@ -38,7 +42,7 @@ const Contact = (props: Props) => {
           <span className="flex space-x-5">
             <GoLocation className="text-base md:text-xl text-[#696bff] animate-pulse" />
             <p className="text-[#696bff] text-lg tracking-[1px]">
-              <span className="text-white uppercase text-lg mr-2">
+              <span className="dark:text-[#fff] text-[#1f1f1f] uppercase text-lg mr-2">
                 Location :
               </span>{" "}
               Iran-Tehran

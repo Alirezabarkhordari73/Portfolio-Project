@@ -38,7 +38,7 @@ const Skills = (props: Props) => {
       <h3 className="uppercase text-[#7b5f2b] tracking-[15px] text-2xl absolute top-28">
         Skills
       </h3>
-      <p className="text-stone-400 absolute top-40 tracking-[1px] text-lg uppercase">
+      <p className="dark:text-[#fff] text-[#1f1f1f] absolute top-40 tracking-[1px] text-lg uppercase">
         Hover Over Skills To Show Skill Ranges ...
       </p>
       <div className="absolute top-48 w-[90%] h-[500px] p-5 flex flex-col items-center">

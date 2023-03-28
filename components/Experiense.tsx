@@ -41,7 +41,7 @@ const Experiense = (props: Props) => {
           }}
         >
           <SwiperSlide className="flex justify-center items-center">
-            <div className="bg-[#1b1b33] w-[410px] h-[610px] text-stone-100 rounded-md hover:bg-[#22223d] transition duration-200 opacity-40 hover:opacity-100 flex flex-col items-center justify-start p-10 border-[1px] border-[#696bff]">
+            <div className="dark:bg-[#1b1b33] w-[410px] h-[610px] dark:text-[#fff] text-[#1f1f1f] rounded-md dark:hover:bg-[#22223d] hover:bg-[#c4c4dd] transition duration-200 opacity-60 hover:opacity-100 flex flex-col items-center justify-start p-10 border-[1px] border-[#696bff]">
               <Image
                 src={img.src}
                 alt="company-img"
@@ -72,7 +72,7 @@ const Experiense = (props: Props) => {
             </div>
           </SwiperSlide>
           <SwiperSlide className="flex justify-center items-center">
-            <div className="bg-[#1b1b33] w-[410px] h-[610px] text-stone-100 rounded-md hover:bg-[#22223d] transition duration-200 opacity-40 hover:opacity-100 flex flex-col items-center justify-start p-10 border-[1px] border-[#696bff]">
+            <div className="dark:bg-[#1b1b33] w-[410px] h-[610px] dark:text-[#fff] text-[#1f1f1f]rounded-md dark:hover:bg-[#22223d] hover:bg-[#c4c4dd] transition duration-200 opacity-60 hover:opacity-100 flex flex-col items-center justify-start p-10 border-[1px] border-[#696bff]">
               <Image
                 src={AmytisLogo.src}
                 alt="company-img"
@@ -103,7 +103,7 @@ const Experiense = (props: Props) => {
             </div>
           </SwiperSlide>
           <SwiperSlide className="flex justify-center items-center">
-            <div className="bg-[#1b1b33] w-[410px] h-[610px] text-stone-100 rounded-md hover:bg-[#22223d] transition duration-200 opacity-40 hover:opacity-100 flex flex-col items-center justify-start p-10 border-[1px] border-[#696bff]">
+            <div className="dark:bg-[#1b1b33] w-[410px] h-[610px] dark:text-[#fff] text-[#1f1f1f] rounded-md dark:hover:bg-[#22223d] hover:bg-[#c4c4dd] transition duration-200 opacity-60 hover:opacity-100 flex flex-col items-center justify-start p-10 border-[1px] border-[#696bff]">
               <Image
                 src={img.src}
                 alt="company-img"

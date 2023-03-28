@@ -4,21 +4,17 @@
 @tailwind components;
 @tailwind utilities;
 
-/* width */
+
 ::-webkit-scrollbar {
-    width: 12px;
-  }
-  
-  /* Track */
-  ::-webkit-scrollbar-track {
-    background: #17171b;
-  }
-  
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-    background: #343568;
-    border-radius: 10px;
-  }
+  width: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: rgb(216, 216, 216);
+  border-radius: 40px;
+}
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
   
 
 body{
@@ -48,7 +44,10 @@ body{
 }
 @layer components{
   .contactInput{
-    @apply outline-none px-4 py-3 bg-[#1a1b30] rounded-sm text-[#c5c5c5] text-lg placeholder-[#676772]
+    @apply outline-none px-4 py-3 dark:bg-[#1a1b30] bg-[#fff] rounded-sm dark:text-[#1b1b1b] text-lg placeholder-[#676772]
+  }
+  .contactInput{
+    @apply outline-none px-4 py-3 dark:bg-[#1a1b30] bg-[#fff]  rounded-sm dark:text-[#1b1b1b] text-lg placeholder-[#676772]
   }
 }
 
