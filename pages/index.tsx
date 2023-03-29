@@ -10,7 +10,7 @@ import Contact from "../components/Contact";
 import { ThemeContext } from "../Context/ContextProvider";
 
 export default function Home() {
-  const { toggleTheme, theme } = useContext(ThemeContext);
+  const { theme } = useContext(ThemeContext);
 
   return (
     <div className={`${theme === "dark" ? "dark" : "light"}`}>

@@ -10,7 +10,9 @@ import { ThemeContext } from "../Context/ContextProvider";
 type Props = {};
 
 const Header = (props: Props) => {
-  const { toggleTheme, theme } = useContext(ThemeContext);
+  const { toggleTheme, theme, setColor, currentColor } =
+    useContext(ThemeContext);
+
   return (
     <div className="top-0 sticky flex items-start justify-between mx-auto max-w-7xl z-50 px-5 py-1">
       <motion.div
@@ -83,6 +85,10 @@ const Header = (props: Props) => {
             onClick={() => toggleTheme()}
           />
         )}
+        <div
+          className="w-7 h-7 rounded-full"
+          style={{ backgroundColor: `${currentColor}` }}
+        ></div>
       </motion.div>
     </div>
   );
