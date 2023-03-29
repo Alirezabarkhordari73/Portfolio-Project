@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { FreeMode, Pagination, Navigation } from "swiper";
@@ -11,13 +11,15 @@ import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 import img from "../assets/images/Avatar2.jpg";
 import AmytisLogo from "../assets/images/LOGO-Amytis.webp";
+import { ThemeContext } from "../Context/ContextProvider";
 
 type Props = {};
 
 const Experiense = (props: Props) => {
+  const { setColor, currentColor } = useContext(ThemeContext);
   return (
     <article className="h-screen relative flex flex-col items-center justify-center">
-      <h3 className="uppercase text-[#7b5f2b] tracking-[15px] text-2xl absolute top-28">
+      <h3 className="uppercase text-[#866830] tracking-[15px] text-2xl absolute top-28">
         Experience
       </h3>
       <motion.div
@@ -41,7 +43,10 @@ const Experiense = (props: Props) => {
           }}
         >
           <SwiperSlide className="flex justify-center items-center">
-            <div className="dark:bg-[#1b1b33] w-[410px] h-[610px] dark:text-[#fff] text-[#1f1f1f] rounded-md dark:hover:bg-[#22223d] hover:bg-[#c4c4dd] transition duration-200 opacity-60 hover:opacity-100 flex flex-col items-center justify-start p-10 border-[1px] border-[#696bff]">
+            <div
+              className="dark:bg-[#1b1b33] w-[410px] h-[610px] dark:text-[#fff] text-[#1f1f1f] rounded-md dark:hover:bg-[#22223d] hover:bg-[#c4c4dd] transition duration-200 opacity-60 hover:opacity-100 flex flex-col items-center justify-start p-10 border-[1px] "
+              style={{ border: `1px solid ${currentColor}` }}
+            >
               <Image
                 src={img.src}
                 alt="company-img"
@@ -56,7 +61,10 @@ const Experiense = (props: Props) => {
                 </h3>
                 <ul className="list-disc ml-5 space-y-3">
                   <li>
-                    <p className="font-semibold text-lg text-[#696bff] tracking-[2px]">
+                    <p
+                      className="font-semibold text-lg tracking-[2px]"
+                      style={{ color: `${currentColor}` }}
+                    >
                       JUNIOR WEB DEVELOPER
                     </p>{" "}
                     Bring to the table win-win survival strategies to ensure
@@ -72,7 +80,10 @@ const Experiense = (props: Props) => {
             </div>
           </SwiperSlide>
           <SwiperSlide className="flex justify-center items-center">
-            <div className="dark:bg-[#1b1b33] w-[410px] h-[610px] dark:text-[#fff] text-[#1f1f1f]rounded-md dark:hover:bg-[#22223d] hover:bg-[#c4c4dd] transition duration-200 opacity-60 hover:opacity-100 flex flex-col items-center justify-start p-10 border-[1px] border-[#696bff]">
+            <div
+              className="dark:bg-[#1b1b33] w-[410px] h-[610px] dark:text-[#fff] text-[#1f1f1f]rounded-md dark:hover:bg-[#22223d] hover:bg-[#c4c4dd] transition duration-200 opacity-60 hover:opacity-100 flex flex-col items-center justify-start p-10 border-[1px] "
+              style={{ border: `1px solid ${currentColor}` }}
+            >
               <Image
                 src={AmytisLogo.src}
                 alt="company-img"
@@ -87,7 +98,10 @@ const Experiense = (props: Props) => {
                 </h3>
                 <ul className="list-disc ml-5 space-y-3">
                   <li>
-                    <p className="font-semibold text-lg text-[#696bff] tracking-[2px]">
+                    <p
+                      className="font-semibold text-lg tracking-[2px]"
+                      style={{ color: `${currentColor}` }}
+                    >
                       Junior Game Programmer
                     </p>{" "}
                     Bring to the table win-win survival strategies to ensure
@@ -103,7 +117,10 @@ const Experiense = (props: Props) => {
             </div>
           </SwiperSlide>
           <SwiperSlide className="flex justify-center items-center">
-            <div className="dark:bg-[#1b1b33] w-[410px] h-[610px] dark:text-[#fff] text-[#1f1f1f] rounded-md dark:hover:bg-[#22223d] hover:bg-[#c4c4dd] transition duration-200 opacity-60 hover:opacity-100 flex flex-col items-center justify-start p-10 border-[1px] border-[#696bff]">
+            <div
+              className="dark:bg-[#1b1b33] w-[410px] h-[610px] dark:text-[#fff] text-[#1f1f1f] rounded-md dark:hover:bg-[#22223d] hover:bg-[#c4c4dd] transition duration-200 opacity-60 hover:opacity-100 flex flex-col items-center justify-start p-10 border-[1px]"
+              style={{ border: `1px solid ${currentColor}` }}
+            >
               <Image
                 src={img.src}
                 alt="company-img"
@@ -118,7 +135,10 @@ const Experiense = (props: Props) => {
                 </h3>
                 <ul className="list-disc ml-5 space-y-3">
                   <li>
-                    <p className="font-semibold text-lg text-[#696bff] tracking-[2px]">
+                    <p
+                      className="font-semibold text-lg tracking-[2px]"
+                      style={{ color: `${currentColor}` }}
+                    >
                       JUNIOR WEB DEVELOPER
                     </p>{" "}
                     Bring to the table win-win survival strategies to ensure
