@@ -11,7 +11,7 @@ type ContextType = {
 export const ThemeContext = createContext<ContextType>({
   theme: "dark",
   toggleTheme: () => {},
-  currentColor: "#1b3eaf",
+  currentColor: "#6c87ff",
   setColor: () => {},
 });
 
@@ -21,7 +21,7 @@ export const ThemeProvider: FC<{ children: ReactNode }> = ({ children }) => {
       (localStorage.getItem("theme") as "light" | "dark")) ||
       "dark"
   );
-  const [currentColor, setCurrentColor] = useState<string>("#1b3eaf");
+  const [currentColor, setCurrentColor] = useState<string>("#6c87ff");
 
   const setColor = (color: string) => {
     setCurrentColor(color);

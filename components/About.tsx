@@ -1,14 +1,16 @@
-import React from "react";
+import React, { useContext } from "react";
 import { motion } from "framer-motion";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
 import { AiOutlineMail, AiFillGithub } from "react-icons/ai";
 import { BsTelephoneInbound } from "react-icons/bs";
+import { ThemeContext } from "../Context/ContextProvider";
 
 import Avatar1 from "../assets/images/Avatar1.jpg";
 
 type Props = {};
 
 export default function About({}: Props) {
+  const { setColor, currentColor } = useContext(ThemeContext);
   const [text, count] = useTypewriter({
     words: ["Here is little about me !"],
     loop: true,
@@ -16,7 +18,7 @@ export default function About({}: Props) {
   });
   return (
     <div className="h-screen relative flex justify-evenly items-center text-center md:flex-row p-3">
-      <h3 className="uppercase text-[#6f5627] tracking-[15px] text-2xl absolute top-28">
+      <h3 className="uppercase text-[#886930] tracking-[15px] text-2xl absolute top-28">
         About Me
       </h3>
       <div className="flex-col flex items-center justify-center lg:flex-row gap-16">
@@ -32,7 +34,7 @@ export default function About({}: Props) {
         <div className="flex flex-col items-center space-y-8 dark:text-[#fff] text-[#1f1f1f] lg:items-start">
           <div className="text-lg md:text-xl font-semibold tracking-[5px] mt-10">
             {text}
-            <Cursor cursorColor="#696bff" />
+            <Cursor cursorColor={`${currentColor}`} />
           </div>
           <p className="dark:text-[#fff] text-[#1f1f1f] text-base md:text-lg text-center lg:text-left">
             Hello! I’m Alireza Barkhordari. Web Developer with over 1 years of
@@ -44,8 +46,14 @@ export default function About({}: Props) {
           <ul className="flex flex-col justify-start items-center text-left lg:text-center lg:items-start w-full space-y-3">
             <li>
               <span className="flex space-x-5">
-                <AiOutlineMail className="text-lg animate-pulse md:text-xl text-[#696bff]" />
-                <p className="text-[#696bff] tracking-[1px]">
+                <AiOutlineMail
+                  className="text-lg animate-pulse md:text-xl"
+                  style={{ color: `${currentColor}` }}
+                />
+                <p
+                  className="tracking-[1px]"
+                  style={{ color: `${currentColor}` }}
+                >
                   <span className="dark:text-[#fff] text-[#1f1f1f] uppercase">
                     Email :
                   </span>{" "}
@@ -55,8 +63,14 @@ export default function About({}: Props) {
             </li>
             <li>
               <span className="flex space-x-5">
-                <BsTelephoneInbound className="text-lg animate-pulse md:text-xl text-[#6a6cff]" />
-                <p className="text-[#696bff] tracking-[1px]">
+                <BsTelephoneInbound
+                  className="text-lg animate-pulse md:text-xl"
+                  style={{ color: `${currentColor}` }}
+                />
+                <p
+                  className="tracking-[1px]"
+                  style={{ color: `${currentColor}` }}
+                >
                   <span className="dark:text-[#fff] text-[#1f1f1f] uppercase">
                     Phone :
                   </span>{" "}
@@ -66,8 +80,14 @@ export default function About({}: Props) {
             </li>
             <li>
               <span className="flex space-x-5">
-                <AiFillGithub className="text-lg animate-pulse md:text-xl text-[#696bff]" />
-                <p className="text-[#696bff] tracking-[1px]">
+                <AiFillGithub
+                  className="text-lg animate-pulse md:text-xl"
+                  style={{ color: `${currentColor}` }}
+                />
+                <p
+                  className="tracking-[1px]"
+                  style={{ color: `${currentColor}` }}
+                >
                   <span className="dark:text-[#fff] text-[#1f1f1f] uppercase">
                     Github :
                   </span>{" "}

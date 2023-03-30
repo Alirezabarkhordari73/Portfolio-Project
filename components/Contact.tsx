@@ -1,11 +1,13 @@
-import React from "react";
+import React, { useContext } from "react";
 import { AiOutlineMail } from "react-icons/ai";
 import { BsTelephoneInbound } from "react-icons/bs";
 import { GoLocation } from "react-icons/go";
+import { ThemeContext } from "../Context/ContextProvider";
 
 type Props = {};
 
 const Contact = (props: Props) => {
+  const { setColor, currentColor } = useContext(ThemeContext);
   return (
     <div className="h-screen relative flex flex-col items-center justify-center">
       <h3 className="uppercase text-[#8b6c31] tracking-[15px] text-2xl absolute top-28">
@@ -13,13 +15,21 @@ const Contact = (props: Props) => {
       </h3>
       <h2 className="dark:text-[#fff] text-[#1f1f1f] absolute top-48 text-lg lg:text-2xl tracking-[1px]">
         If you consider About my resume please{" "}
-        <span className="text-[#696bff] uppercase">contact to me</span>
+        <span className="uppercase" style={{ color: `${currentColor}` }}>
+          contact to me
+        </span>
       </h2>
       <ul className="flex absolute top-64 flex-col justify-start items-center text-left w-full space-y-3">
         <li>
           <span className="flex space-x-5">
-            <AiOutlineMail className="text-base md:text-xl text-[#696bff] animate-pulse" />
-            <p className="text-[#696bff] text-lg tracking-[1px]">
+            <AiOutlineMail
+              className="text-base md:text-xl animate-pulse"
+              style={{ color: `${currentColor}` }}
+            />
+            <p
+              className="text-lg tracking-[1px]"
+              style={{ color: `${currentColor}` }}
+            >
               <span className="dark:text-[#fff] text-[#1f1f1f] uppercase text-lg mr-2">
                 Email :
               </span>{" "}
@@ -29,8 +39,14 @@ const Contact = (props: Props) => {
         </li>
         <li>
           <span className="flex space-x-5">
-            <BsTelephoneInbound className="text-base md:text-xl text-[#696bff] animate-pulse" />
-            <p className="text-[#696bff] text-lg tracking-[1px]">
+            <BsTelephoneInbound
+              className="text-base md:text-xl animate-pulse"
+              style={{ color: `${currentColor}` }}
+            />
+            <p
+              className="text-lg tracking-[1px]"
+              style={{ color: `${currentColor}` }}
+            >
               <span className="dark:text-[#fff] text-[#1f1f1f] uppercase text-lg mr-2">
                 Phone :
               </span>{" "}
@@ -40,8 +56,14 @@ const Contact = (props: Props) => {
         </li>
         <li>
           <span className="flex space-x-5">
-            <GoLocation className="text-base md:text-xl text-[#696bff] animate-pulse" />
-            <p className="text-[#696bff] text-lg tracking-[1px]">
+            <GoLocation
+              className="text-base md:text-xl animate-pulse"
+              style={{ color: `${currentColor}` }}
+            />
+            <p
+              className="text-lg tracking-[1px]"
+              style={{ color: `${currentColor}` }}
+            >
               <span className="dark:text-[#fff] text-[#1f1f1f] uppercase text-lg mr-2">
                 Location :
               </span>{" "}
@@ -57,7 +79,10 @@ const Contact = (props: Props) => {
         </div>
         <input placeholder="Subject" className="contactInput" />
         <textarea placeholder="Message" className="contactInput" />
-        <button className="py-5 px-4 bg-[#696bff] rounded-md dark:text-[#fff] text-black text-xl font-bold">
+        <button
+          style={{ backgroundColor: `${currentColor}` }}
+          className="py-5 px-4 g-[#696bff] rounded-md dark:text-[#fff] text-black text-xl font-bold"
+        >
           Submit
         </button>
       </form>

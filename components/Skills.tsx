@@ -35,7 +35,7 @@ const Skills = (props: Props) => {
 
   return (
     <div className="h-screen relative flex flex-col items-center justify-center">
-      <h3 className="uppercase text-[#7b5f2b] tracking-[15px] text-2xl absolute top-28">
+      <h3 className="uppercase text-[#8f6f33] tracking-[15px] text-2xl absolute top-28">
         Skills
       </h3>
       <p className="dark:text-[#fff] text-[#1f1f1f] absolute top-40 tracking-[1px] text-lg uppercase">

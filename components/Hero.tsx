@@ -1,12 +1,14 @@
 import Image from "next/image";
 import React, { useContext } from "react";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
+import { ThemeContext } from "../Context/ContextProvider";
 
 import Avatar2 from "../assets/images/Avatar2.jpg";
 
 type Props = {};
 
 export default function Hero({}: Props) {
+  const { setColor, currentColor } = useContext(ThemeContext);
   const [text, count] = useTypewriter({
     words: ["Hi, I am Alireza Barkhordari . . .", "Wellcome To My Portfolio"],
     loop: true,
@@ -27,7 +29,7 @@ export default function Hero({}: Props) {
       </p>
       <h1 className="dark:text-[#fff] text-[#1d1d1d] text-xl md:text-3xl lg:text-6xl drop-shadow-sm">
         <span className="font-bold tracking-widest">{text}</span>
-        <Cursor cursorColor="#696bff" />
+        <Cursor cursorColor={`${currentColor}`} />
       </h1>
     </div>
   );

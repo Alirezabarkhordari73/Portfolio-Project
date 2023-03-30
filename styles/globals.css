@@ -44,7 +44,7 @@ body{
 }
 @layer components{
   .contactInput{
-    @apply outline-none px-4 py-3 dark:bg-[#1a1b30] bg-[#fff] rounded-sm dark:text-[#ffffff] text-lg placeholder-[#676772]
+    @apply outline-none px-4 py-3 dark:bg-[#202020] bg-[#fff] rounded-sm dark:text-[#ffffff] text-lg placeholder-[#676772]
   }
   
 }
