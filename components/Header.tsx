@@ -22,48 +22,50 @@ const Header = (props: Props) => {
   console.log("openColorPalleteState", openColorPalleteState);
 
   return (
-    <div className="top-0 sticky flex items-start justify-between mx-auto max-w-7xl z-50 px-5 py-1">
+    <div className="top-0 sticky flex justify-center items-start md:justify-between mx-auto max-w-7xl z-50 px-5 py-1">
       <motion.div
         initial={{ x: -500, opacity: 0, scale: 0.5 }}
         animate={{ x: 0, opacity: 1, scale: 1 }}
         transition={{ duration: 1 }}
       >
-        <SocialIcon
-          url="https://www.instagram.com/aliiiii_reza73/"
-          bgColor="transparent"
-          fgColor={`${theme === "dark" ? "#fff" : "#000"}`}
-          style={{ height: 43, width: 43 }}
-        />
-        <SocialIcon
-          url="https://www.facebook.com/alireza.barkhordari.16/"
-          bgColor="transparent"
-          fgColor={`${theme === "dark" ? "#fff" : "#000"}`}
-          style={{ height: 43, width: 43 }}
-        />
-        <SocialIcon
-          url="https://www.youtube.com/"
-          bgColor="transparent"
-          fgColor={`${theme === "dark" ? "#fff" : "#000"}`}
-          style={{ height: 43, width: 43 }}
-        />
-        <SocialIcon
-          url="https://twitter.com/"
-          bgColor="transparent"
-          fgColor={`${theme === "dark" ? "#fff" : "#000"}`}
-          style={{ height: 43, width: 43 }}
-        />
-        <SocialIcon
-          url="https://www.linkedin.com/"
-          bgColor="transparent"
-          fgColor={`${theme === "dark" ? "#fff" : "#000"}`}
-          style={{ height: 43, width: 43 }}
-        />
-        <SocialIcon
-          url="https://github.com/Alirezabarkhordari73"
-          bgColor="transparent"
-          fgColor={`${theme === "dark" ? "#fff" : "#000"}`}
-          style={{ height: 43, width: 43 }}
-        />
+        <div className="hidden md:flex">
+          <SocialIcon
+            url="https://www.instagram.com/aliiiii_reza73/"
+            bgColor="transparent"
+            fgColor={`${theme === "dark" ? "#fff" : "#000"}`}
+            style={{ height: 43, width: 43 }}
+          />
+          <SocialIcon
+            url="https://www.facebook.com/alireza.barkhordari.16/"
+            bgColor="transparent"
+            fgColor={`${theme === "dark" ? "#fff" : "#000"}`}
+            style={{ height: 43, width: 43 }}
+          />
+          <SocialIcon
+            url="https://www.youtube.com/"
+            bgColor="transparent"
+            fgColor={`${theme === "dark" ? "#fff" : "#000"}`}
+            style={{ height: 43, width: 43 }}
+          />
+          <SocialIcon
+            url="https://twitter.com/"
+            bgColor="transparent"
+            fgColor={`${theme === "dark" ? "#fff" : "#000"}`}
+            style={{ height: 43, width: 43 }}
+          />
+          <SocialIcon
+            url="https://www.linkedin.com/"
+            bgColor="transparent"
+            fgColor={`${theme === "dark" ? "#fff" : "#000"}`}
+            style={{ height: 43, width: 43 }}
+          />
+          <SocialIcon
+            url="https://github.com/Alirezabarkhordari73"
+            bgColor="transparent"
+            fgColor={`${theme === "dark" ? "#fff" : "#000"}`}
+            style={{ height: 43, width: 43 }}
+          />
+        </div>
       </motion.div>
 
       <motion.div
