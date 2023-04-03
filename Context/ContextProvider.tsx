@@ -25,7 +25,11 @@ export const ThemeProvider: FC<{ children: ReactNode }> = ({ children }) => {
       (localStorage.getItem("theme") as "light" | "dark")) ||
       "dark"
   );
-  const [currentColor, setCurrentColor] = useState<string>("#6c87ff");
+  const [currentColor, setCurrentColor] = useState<string>(
+    (typeof window !== "undefined" &&
+      (localStorage.getItem("colorMode") as "#6c87ff")) ||
+      ""
+  );
 
   const [openColorPalleteState, SetOpenColorPalleteState] =
     useState<boolean>(false);
