@@ -6,6 +6,8 @@ type ContextType = {
   toggleTheme: () => void;
   currentColor: string;
   setColor: (color: string) => void;
+  openColorPallete: () => void;
+  openColorPalleteState: boolean;
 };
 
 export const ThemeContext = createContext<ContextType>({
@@ -13,6 +15,8 @@ export const ThemeContext = createContext<ContextType>({
   toggleTheme: () => {},
   currentColor: "#6c87ff",
   setColor: () => {},
+  openColorPallete: () => {},
+  openColorPalleteState: false,
 });
 
 export const ThemeProvider: FC<{ children: ReactNode }> = ({ children }) => {
@@ -22,6 +26,9 @@ export const ThemeProvider: FC<{ children: ReactNode }> = ({ children }) => {
       "dark"
   );
   const [currentColor, setCurrentColor] = useState<string>("#6c87ff");
+
+  const [openColorPalleteState, SetOpenColorPalleteState] =
+    useState<boolean>(false);
 
   const setColor = (color: string) => {
     setCurrentColor(color);
@@ -34,9 +41,20 @@ export const ThemeProvider: FC<{ children: ReactNode }> = ({ children }) => {
     localStorage.setItem("theme", val);
   };
 
+  const openColorPallete = (): void => {
+    SetOpenColorPalleteState(!openColorPalleteState);
+  };
+
   return (
     <ThemeContext.Provider
-      value={{ theme, toggleTheme, currentColor, setColor }}
+      value={{
+        theme,
+        toggleTheme,
+        currentColor,
+        setColor,
+        openColorPallete,
+        openColorPalleteState,
+      }}
     >
       {children}
     </ThemeContext.Provider>

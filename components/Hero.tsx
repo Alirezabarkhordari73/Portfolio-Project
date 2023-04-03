@@ -17,12 +17,16 @@ export default function Hero({}: Props) {
   return (
     <div className="h-screen flex flex-col justify-center items-center space-y-5">
       <Image
-        className="rounded-full object-cover w-[150px] h-[150px]"
+        className="rounded-full object-cover w-[170px] h-[170px] border-[3px]"
         src={Avatar2}
         alt="coding-image"
-        width={100}
-        height={100}
+        width={120}
+        height={120}
         priority={true}
+        style={{
+          borderInlineColor: `${currentColor}`,
+          borderBlockColor: `${currentColor}`,
+        }}
       />
       <p className="dark:text-[#fff] text-[#1d1d1d] text-sm md:text-lg uppercase tracking-[15px] md:tracking-[10px] text-center">
         software enginier

@@ -10,13 +10,16 @@ import { ThemeContext } from "../Context/ContextProvider";
 type Props = {};
 
 const Header = (props: Props) => {
-  const [openColorPalleteState, SetOpenColorPalleteState] = useState(false);
-  const { toggleTheme, theme, setColor, currentColor } =
-    useContext(ThemeContext);
+  const {
+    toggleTheme,
+    theme,
+    setColor,
+    currentColor,
+    openColorPallete,
+    openColorPalleteState,
+  } = useContext(ThemeContext);
 
-  const openColorPallete = () => {
-    SetOpenColorPalleteState(!openColorPalleteState);
-  };
+  console.log("openColorPalleteState", openColorPalleteState);
 
   return (
     <div className="top-0 sticky flex items-start justify-between mx-auto max-w-7xl z-50 px-5 py-1">
@@ -95,38 +98,47 @@ const Header = (props: Props) => {
           style={{ backgroundColor: `${currentColor}` }}
           onClick={() => openColorPallete()}
         ></div>
-        {openColorPalleteState && (
-          <div className="w-[60px] absolute top-[4rem] right-[0.4rem] dark:bg-[#202031] rounded-md flex-col flex justify-between items-center gap-4 py-4 ">
-            <div
-              className="w-7 h-7 rounded-full bg-[#ff5b5b] cursor-pointer"
-              onClick={() => setColor("#ff5b5b")}
-            ></div>
-            <div
-              className="w-7 h-7 rounded-full bg-[#d0e41b] cursor-pointer"
-              onClick={() => setColor("#d3ff5b")}
-            ></div>
-            <div
-              className="w-7 h-7 rounded-full bg-[#ff5bc0] cursor-pointer"
-              onClick={() => setColor("#ff5bc0")}
-            ></div>
-            <div
-              className="w-7 h-7 rounded-full bg-[#5bd1ff] cursor-pointer"
-              onClick={() => setColor("#5bd1ff")}
-            ></div>
-            <div
-              className="w-7 h-7 rounded-full bg-[#795bff] cursor-pointer"
-              onClick={() => setColor("#795bff")}
-            ></div>
-            <div
-              className="w-7 h-7 rounded-full bg-[#5bff7f] cursor-pointer"
-              onClick={() => setColor("#5bff7f")}
-            ></div>
-            <div
-              className="w-7 h-7 rounded-full bg-[#ff7c5b] cursor-pointer"
-              onClick={() => setColor("#ff7c5b")}
-            ></div>
-          </div>
-        )}
+
+        <div
+          className={
+            openColorPalleteState
+              ? "w-[60px] absolute top-[3.5rem] right-[0.33rem] dark:bg-[#202031] rounded-md flex-col flex justify-between items-center gap-4 py-4 opacity-100 transition-all duration-100"
+              : "w-[60px] absolute top-[-25rem] right-[0.33rem] dark:bg-[#202031] rounded-md flex-col flex justify-between items-center gap-4 py-4 opacity-0 transition-all duration-100"
+          }
+        >
+          <div
+            className="w-7 h-7 rounded-full bg-[#ff5b5b] cursor-pointer"
+            onClick={() => setColor("#ff5b5b")}
+          ></div>
+          <div
+            className="w-7 h-7 rounded-full bg-[#d0e41b] cursor-pointer"
+            onClick={() => setColor("#d3ff5b")}
+          ></div>
+          <div
+            className="w-7 h-7 rounded-full bg-[#ff5bc0] cursor-pointer"
+            onClick={() => setColor("#ff5bc0")}
+          ></div>
+          <div
+            className="w-7 h-7 rounded-full bg-[#5bd1ff] cursor-pointer"
+            onClick={() => setColor("#5bd1ff")}
+          ></div>
+          <div
+            className="w-7 h-7 rounded-full bg-[#795bff] cursor-pointer"
+            onClick={() => setColor("#795bff")}
+          ></div>
+          <div
+            className="w-7 h-7 rounded-full bg-[#3fdd61] cursor-pointer"
+            onClick={() => setColor("#3fdd61")}
+          ></div>
+          <div
+            className="w-7 h-7 rounded-full bg-[#ff7c5b] cursor-pointer"
+            onClick={() => setColor("#ff7c5b")}
+          ></div>
+          <div
+            className="w-7 h-7 rounded-full bg-[#ffde24] cursor-pointer"
+            onClick={() => setColor("#ffde24")}
+          ></div>
+        </div>
       </motion.div>
     </div>
   );
