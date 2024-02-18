@@ -1,0 +1,287 @@
+.LabeledTextBox,
+.LabeledTextArea {
+  position: relative;
+  color: #bdbdbd;
+  font-size: 15px;
+  font-weight: 500;
+  height: 3.33em;
+  width: 100%;
+  background-color: white;
+  border: 1px solid #a8a8a8;
+  border-radius: 10px;
+  /* margin-top: 1em; */
+  font-variation-settings: "dots" 3;
+}
+
+.LabeledTextBox:focus-within,
+.LabeledTextArea:focus-within {
+  color: black;
+  border: 1px solid #242424;
+}
+
+.LabeledTextBox.readonly,
+.LabeledTextArea.readonly {
+  background-color: #f5f5f5;
+}
+.LabeledTextBox.readonly > label > span,
+.LabeledTextArea.readonly > label > span {
+  background-image: linear-gradient(#f5f5f5, #f5f5f5);
+}
+
+.LabeledTextBox > label,
+.LabeledTextArea > label {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.LabeledTextBox > label > span,
+.LabeledTextArea > label > span {
+  position: absolute;
+  padding-left: 0.6em;
+  padding-right: 0.6em;
+  height: 3em;
+  top: 0.8em;
+  right: 0;
+  background-size: 100% 4px;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  transition: all 0.5s;
+}
+
+.LabeledTextBox > label > input:focus ~ span,
+.LabeledTextBox > label > input:not([value=""]) ~ span,
+.LabeledTextArea > label > textarea:focus ~ span,
+.LabeledTextArea > label > textarea:not(.empty) ~ span {
+  top: -0.8em;
+  right: 20px;
+  height: 1.6em;
+  font-size: 0.8em;
+  background-image: linear-gradient(white, white);
+  transition: all 0.5s;
+}
+
+.LabeledTextBox > label > input:not(:focus)::placeholder,
+.LabeledTextArea > label > textarea:not(:focus)::placeholder {
+  color: transparent;
+  transition: all 0.5s;
+}
+
+.LabeledTextBox > label > input::placeholder,
+.LabeledTextArea > label > textarea::placeholder {
+  color: #414141;
+  transition: all 0.5s;
+}
+
+.LabeledTextBox input,
+.LabeledTextArea textarea {
+  border: none;
+  position: absolute;
+  display: block;
+  right: 0;
+  width: 100%;
+  font-weight: 500;
+  height: 100%;
+  padding: 10px;
+  background-color: #0000;
+  color: inherit;
+}
+
+/*textarea*/
+.LabeledTextArea {
+  height: fit-content;
+}
+.LabeledTextArea textarea {
+  outline: none;
+  resize: none;
+}
+
+/*******************************IntProgress ************************/
+.IntProgress {
+  width: 100%;
+  background-color: #ffe7e9;
+  border-radius: 3px;
+  height: 6px;
+}
+
+.IntProgress .Progress {
+  background-color: #ef394e;
+  border-radius: 3px;
+  height: 6px;
+}
+
+/******************************* WizardProgress ************************/
+.WizardProgress {
+  display: flex;
+  width: 100%;
+  padding: 30px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #757575;
+  margin-top: 30px;
+  margin-bottom: 100px;
+}
+
+.WizardProgress .item {
+  flex-grow: 0;
+  flex-shrink: 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.WizardProgress .rspacer,
+.WizardProgress .gspacer {
+  margin-top: 1.65em;
+  flex-grow: 10;
+  height: 1px;
+  background-color: #ef394e;
+}
+
+.WizardProgress .gspacer {
+  background-color: #bdbdbd;
+}
+
+.WizardProgress .Text {
+  margin-top: 30px;
+}
+.WizardProgress .okcircle,
+.WizardProgress .fcircle,
+.WizardProgress .ecircle {
+  height: 2em;
+  width: 2em;
+  line-height: 2em; /*center text vertically */
+  border-radius: 50%;
+  background-color: #ef394e;
+  align-self: center;
+  font-size: 1.6em;
+}
+
+.WizardProgress .fcircle {
+  color: white;
+}
+
+.WizardProgress .okcircle {
+  background-color: #ffe9e9;
+  background-image: url("data:image/svg+xml,%3Csvg%20width%3D'25'%20height%3D'19'%20viewBox%3D'0%200%2025%2019'%20fill%3D'none'%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%3E%20%3Cpath%20d%3D'M23%202L8.30005%2016.6087L2%2010.3478'%20stroke%3D'%23EF394E'%20stroke-width%3D'3'%20stroke-linecap%3D'round'%20stroke-linejoin%3D'round'%2F%3E%20%3C%2Fsvg%3E");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+
+.WizardProgress .ecircle {
+  background-color: #0000;
+  border: 1px solid #ef394e;
+  color: #ef394e;
+}
+
+/* .WizardProgress .okcircle::before
+{
+  display: inline-block;
+  content: "";
+  width: 21px;
+  height: 12px;
+  border-bottom: 3px solid #EF394E;
+  border-left: 3px solid #EF394E;
+  transform: rotate(-50deg);
+}  */
+
+.GBullet {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 2em;
+  letter-spacing: 0em;
+  margin-top: 0;
+  margin-right: 2em;
+  text-align: justify;
+}
+
+.GBullet:before {
+  display: inline-block;
+  content: "\2022"; /*  '•' */
+  font-size: 1.5em;
+  min-height: 10px;
+  width: 0.66em;
+  margin-top: -50%;
+  margin-right: -1em;
+  margin-left: 0;
+  height: 100%;
+}
+/*****************************/
+
+.bradiobutton {
+  display: block;
+  position: relative;
+  padding-right: 23px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 14px;
+  user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.bradiobutton input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom radio button */
+.bradiobutton .checkmark {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 15px;
+  width: 15px;
+  background-color: #0000;
+  background-clip: padding-box;
+  border-radius: 50%;
+  border: 3px solid #0000;
+  outline: 2px solid #ef394e;
+  font-size: 14px;
+  font-weight: 500;
+  color: #0008;
+}
+
+/* On mouse-over, add a grey background color */
+.bradiobutton:hover input ~ .checkmark {
+  background-color: #ef394e60;
+}
+
+.bradiobutton input:checked ~ .checkmark {
+  background-color: #ef394e;
+}
+
+.bradiobutton .checkmark:after {
+  display: none !important;
+}
+
+@media only screen and (max-width: 768px) {
+  .GBullet {
+    font-size: 12px;
+    font-weight: 400;
+  }
+
+  .WizardProgress {
+    font-size: 12px;
+    font-weight: 600;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .WizardProgress .Text {
+    font-size: 10px;
+  }
+
+  .LabeledTextBox,
+  .LabeledTextArea {
+    height: 3.8em;
+    font-size: 12px;
+  }
+  .LabeledTextBox input,
+  .LabeledTextArea textarea {
+    font-size: 11px;
+  }
+}
