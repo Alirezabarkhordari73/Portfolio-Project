@@ -1,0 +1,785 @@
+#Bimeh {
+  background-color: white;
+  border-radius: 25px;
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+  color: #7c7c7c;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+#Bimeh .row {
+  display: flex;
+}
+#Bimeh .selfStart {
+  align-self: flex-start;
+}
+#Bimeh .selfCenter {
+  align-self: center;
+}
+#Bimeh .selfEnd {
+  align-self: flex-end;
+}
+#Bimeh .center {
+  text-align: center;
+}
+
+#Bimeh .error {
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 25px;
+  color: red;
+  min-height: 2em;
+}
+
+#LoginMessage {
+  width: 28%;
+}
+
+#Bimeh h1 {
+  color: #ef394e;
+  font-weight: 800;
+  font-size: 32px;
+}
+#Bimeh h2 {
+  color: #ef394e;
+  font-weight: 800;
+  font-size: 20px;
+}
+
+#Bimeh .LargeText {
+  font-weight: 600;
+  font-size: 20px;
+}
+
+#BimehTable.mtable thead tr {
+  background-color: #cbcbcb;
+}
+
+#Bimeh .FormContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 30px;
+  column-gap: 50px;
+  align-items: flex-end;
+}
+
+.ColStart1 {
+  grid-column-start: 1;
+}
+.ColStart2 {
+  grid-column-start: 2;
+}
+.ColStart3 {
+  grid-column-start: 3;
+}
+.ColStart4 {
+  grid-column-start: 4;
+}
+.ColStart5 {
+  grid-column-start: 5;
+}
+.ColStart6 {
+  grid-column-start: 6;
+}
+.ColStart7 {
+  grid-column-start: 7;
+}
+.ColEnd2 {
+  grid-column-end: 2;
+}
+.ColEnd3 {
+  grid-column-end: 3;
+}
+.ColEnd4 {
+  grid-column-end: 4;
+}
+.ColEnd5 {
+  grid-column-end: 5;
+}
+.ColEnd6 {
+  grid-column-end: 6;
+}
+.ColEnd7 {
+  grid-column-end: 7;
+}
+.ColEnd8 {
+  grid-column-end: 8;
+}
+
+#fileUploads .LabeledTextBox > label > span,
+.LabeledTextArea > label > span {
+  top: -2.2em;
+}
+#Bimeh .QuestionHeader {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  border-radius: 10px;
+  background-color: #ef394e;
+  color: white;
+  font-size: 0.8em;
+  align-self: flex-end;
+  height: calc(3.33em * 1.25);
+  padding: 10px;
+  line-height: calc(3.33em * 1.25 - 20px);
+}
+#Bime .LoadingModal {
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(8.8px);
+  -webkit-backdrop-filter: blur(8.8px);
+}
+
+#Bimeh .CloseBut {
+  float: right;
+  height: 1em;
+  margin: 3px 5px 0 12px;
+  cursor: pointer;
+}
+
+#Bimeh .CloseBut svg {
+  stroke: white;
+  height: 100%;
+}
+#Bimeh .CloseBut:hover svg {
+  stroke: #fffb;
+  transform: scale(1.2);
+  transform-origin: center center;
+  transition: all 0.1s;
+}
+
+#Bimeh .AddCircle {
+  text-align: center;
+  margin-top: 15px;
+  cursor: pointer;
+}
+
+#Bimeh .AddCircle:hover {
+  filter: brightness(0.7);
+}
+
+#Bimeh .Horoof {
+  font-size: 12px;
+}
+#Bimeh .Success {
+  color: green;
+}
+#Bimeh .Error {
+  color: red;
+}
+
+#Bimeh .RButton {
+  display: inline-block;
+  width: 150px;
+  height: 52px;
+  border: 2px solid #81858b;
+  border-radius: 6px;
+  margin: 0 22px 0 22px;
+  font-size: 18px;
+  cursor: pointer;
+  background: none;
+  color: unset;
+}
+#Bimeh .RButton:focus,
+#Bimeh .RButton:hover {
+  color: black;
+}
+#Bimeh .RButton:hover {
+  border-color: black;
+}
+
+#Bimeh .tickcircle {
+  height: 2.2em;
+  width: 2.2em;
+  line-height: 2.2em; /*center text vertically */
+  border-radius: 50%;
+  align-self: center;
+  font-size: 1.6em;
+  border: 3px solid #008c16;
+  background-image: url("data:image/svg+xml,%3Csvg%20width%3D'25'%20height%3D'19'%20viewBox%3D'0%200%2025%2019'%20fill%3D'none'%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%3E%20%3Cpath%20d%3D'M23%202L8.30005%2016.6087L2%2010.3478'%20stroke%3D'%23008C16'%20stroke-width%3D'3'%20stroke-linecap%3D'round'%20stroke-linejoin%3D'round'%2F%3E%20%3C%2Fsvg%3E");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+#Bimeh .fonticonBtn:hover {
+  background-color: #dc4a53;
+  border: "1px solid #eee";
+  color: #fff !important;
+}
+#Bimeh .fonticonBtn {
+  padding: 9px 14px;
+  font-size: 22px;
+  margin-top: 1vh;
+  border-radius: 28px;
+  border: 1px solid #dc4a53;
+  color: #dc4a53;
+  width: 50px;
+  margin-right: 15px;
+  height: 50px;
+  position: absolute;
+  transition: 0.5s;
+}
+
+#Bimeh .DatePickerLabel {
+  box-shadow: unset;
+  border: 1px solid #a8a8a8;
+  margin: 0;
+}
+#Bimeh .TransparrentBackground {
+  background: rgba(255, 255, 255, 0.562);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(8.8px);
+  -webkit-backdrop-filter: blur(8.8px);
+}
+
+#Bimeh .ImagePreviewContainer {
+  animation: fadeInAnimation ease 0.5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+/* From https://css.glass */
+
+.colmd2 {
+  width: 48% !important;
+  margin-right: 2% !important;
+}
+.colmd1 {
+  width: 100% !important;
+  margin-right: 2% !important;
+}
+.PopupDetail {
+  background-color: rgb(243, 243, 243);
+  opacity: 1.2;
+  border-radius: 20px;
+  height: 90vh;
+  width: 700px;
+  margin: 0 auto;
+  margin-top: 5vh;
+  padding: 25px;
+  overflow: auto;
+}
+.PopupDetailItem {
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 20px;
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  margin-top: 30px;
+  display: inline-flex;
+  cursor: pointer;
+  color: #e06a71;
+  transition: 0.9s;
+}
+
+.PopupDetailItem:hover {
+  background-color: #e06a71;
+  color: #fff;
+}
+.PopupDetailItemIcon {
+  font-size: 50px;
+  margin: 0 auto;
+  width: 100px;
+  height: 100px;
+  padding-top: 18px;
+  margin-bottom: 25px;
+}
+#Bimeh .bimenmaeItem {
+  margin-top: 40px;
+  width: 32%;
+  padding: 15px;
+  border-radius: 20px;
+  background-color: #fff;
+  display: inline-block;
+  margin-right: 1%;
+  font-size: 16px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  animation: fadeInAnimation ease 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+.custom-file-upload {
+  display: inline-block;
+  padding: 6px 12px;
+  cursor: pointer;
+}
+#Bimeh .newDarkhast {
+  margin-top: 20px;
+  width: 70%;
+  padding: 15px;
+  border-radius: 20px;
+  background-color: #fff;
+  height: auto;
+  display: inline-block;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.DatePickerBox {
+  min-width: 100%;
+  max-width: 100%;
+}
+
+#Bimeh .Statusicon {
+  padding: 9px 14px;
+  font-size: 15px !important;
+  border-radius: 28px;
+  width: 40px;
+  margin-right: 15px;
+  height: 40px;
+  transition: 0.5s;
+}
+.LoginFormContainer {
+  position: absolute;
+  padding: 30px;
+  height: auto;
+  width: 500px;
+  background-color: rgb(255, 255, 255);
+  left: 50%;
+  top: 50%;
+  margin-top: -215px;
+  margin-left: -250px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.ChangePassContainer {
+  padding: 30px;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  margin-top: 41px;
+  height: 75vh;
+  border-radius: 20px;
+  text-align: center;
+}
+.flexDisp {
+  display: flex;
+}
+
+.btnFont {
+  font-size: 14px !important;
+}
+
+.GBullet {
+  font-size: inherit !important;
+}
+
+.ItemContainer {
+  /* margin: 0vh 10% 10vh; */
+  width: 72%;
+}
+.LogoImg {
+  width: 110px;
+  height: 80px;
+  position: absolute;
+  left: 25px;
+  opacity: 1;
+  zoom: 1;
+  object-fit: cover;
+}
+.littleNewDarkhast {
+  width: 28%;
+  margin-right: 2%;
+  background-color: unset;
+  padding: 0px;
+  margin-top: 20px;
+  border-radius: 20px;
+  height: auto;
+  display: inline-block;
+}
+
+.ErrorMessageBox {
+  width: 100%;
+  height: 40px;
+  font-size: var(--MediumFontSizeErrorMsg);
+  color: #dc4a53;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ShakeAnimation {
+  animation: shake 150ms 2 linear;
+  -moz-animation: shake 150ms 2 linear;
+  -webkit-animation: shake 150ms 2 linear;
+  -o-animation: shake 150ms 2 linear;
+}
+
+@media only screen and (max-width: 1373px) {
+  .LoginFormContainer {
+    left: 25% !important;
+  }
+
+  #LoginMessage {
+    width: 40%;
+  }
+  .btnFont {
+    font-size: 12px !important;
+  }
+  #Bimeh .bimenmaeItem {
+    font-size: 13px;
+  }
+  #Bimeh h2 {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 1260px) {
+  #Bimeh .newDarkhast {
+    width: 100%;
+  }
+
+  #LoginMessage {
+    width: 45%;
+  }
+  .littleNewDarkhast {
+    width: 100%;
+    margin-right: 0%;
+  }
+  .LogoImg {
+    width: 110px;
+    height: 80px;
+    object-fit: cover;
+  }
+  #Bimeh .fonticonBtn {
+    font-size: 17px;
+    margin-top: 1vh;
+    border-radius: 28px;
+    border: 1px solid #dc4a53;
+    color: #dc4a53;
+    width: 43px;
+    margin-right: -7px;
+    height: 43px;
+    position: absolute;
+    transition: 0.5s;
+    padding: 10px 14px;
+  }
+  #Bimeh .Statusicon {
+    padding: 7px 11px;
+    font-size: 14px !important;
+    border-radius: 28px;
+    width: 35px;
+    margin-right: 15px;
+    height: 35px;
+    transition: 0.5s;
+  }
+  #Bimeh .bimenmaeItem {
+    width: 48.5%;
+  }
+  .LoginFormContainer {
+    left: 25% !important;
+    width: 50%;
+    margin-left: -25%;
+    height: 100vh;
+    margin-top: 0px;
+    top: 0px;
+    border-radius: 0;
+  }
+  .ItemContainer {
+    margin: 0vh 5% 5vh;
+    width: 90%;
+  }
+  #Bimeh h1 {
+    font-weight: 800;
+    font-size: 20px;
+  }
+  #Bimeh h2 {
+    font-weight: 800;
+    font-size: 15px;
+  }
+  #Bimeh .LargeText {
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 2em;
+  }
+
+  #Bimeh .btn {
+    font-size: 13px;
+    font-weight: 700;
+    padding: 10px 15px 10px 10px;
+  }
+
+  #Bimeh .FormContainer {
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 30px;
+  }
+
+  .ColStart1 {
+    grid-column-start: unset;
+  }
+  .ColStart2 {
+    grid-column-start: unset;
+  }
+  .ColStart3 {
+    grid-column-start: unset;
+  }
+  .ColStart4 {
+    grid-column-start: unset;
+  }
+  .ColStart5 {
+    grid-column-start: unset;
+  }
+  .ColStart6 {
+    grid-column-start: unset;
+  }
+  .ColStart7 {
+    grid-column-start: unset;
+  }
+  .ColEnd2 {
+    grid-column-end: unset;
+  }
+  .ColEnd3 {
+    grid-column-end: unset;
+  }
+  .ColEnd4 {
+    grid-column-end: unset;
+  }
+  .ColEnd5 {
+    grid-column-end: unset;
+  }
+  .ColEnd6 {
+    grid-column-end: unset;
+  }
+  .ColEnd7 {
+    grid-column-end: unset;
+  }
+  .ColEnd8 {
+    grid-column-end: unset;
+  }
+
+  #Bimeh .CloseBut {
+    margin: 2px 5px 0 10px;
+  }
+
+  .ErrorMessageBox {
+    font-size: var(--MediumFontSizeErrorMsg);
+  }
+}
+
+@media only screen and (max-width: 720px) {
+  h1 {
+    font-size: calc(1.5rem * var(--SmallFontSizeErrorMsg));
+  }
+
+  h2 {
+    font-size: calc(1.5rem * var(--SmallFontSizeErrorMsg));
+  }
+
+  #Bimeh .newDarkhast {
+    width: 100%;
+  }
+  .colmd2 {
+    width: 100% !important;
+    margin-right: 2% !important;
+  }
+
+  .colmd1 {
+    width: 100% !important;
+    margin-right: 2% !important;
+  }
+
+  #LoginMessage {
+    width: 91%;
+    font-size: 12px;
+  }
+  .ButtWidth {
+    width: 100%;
+  }
+  .PopupDetailItem {
+    width: 130px;
+    height: 130px;
+    font-size: 11px;
+    padding: 0px;
+  }
+  .PopupDetailItemIcon {
+    height: 74px;
+  }
+  .PopupDetail {
+    width: 90%;
+  }
+  #Bimeh .bimenmaeItem {
+    width: 100%;
+  }
+  .LoginFormContainer {
+    left: 25% !important;
+    width: 100%;
+    margin-left: -25%;
+    height: 66vh;
+    margin-top: 0px;
+    top: 0px;
+    border-radius: 0;
+  }
+  .LoginFormContainer button {
+    height: auto;
+  }
+  .Half {
+    width: 100% !important;
+  }
+
+  .flexDisp {
+    display: block;
+    width: 100% !important;
+  }
+  .HalfImg {
+    display: none !important;
+  }
+  .HalfText {
+    padding: 10px !important;
+  }
+  .AlertText {
+    position: relative !important;
+    margin-top: 70vh !important;
+    top: 0px !important;
+    height: auto !important;
+  }
+  #Bimeh h1 {
+    font-weight: 800;
+    font-size: 20px;
+  }
+  #Bimeh h2 {
+    font-weight: 800;
+    font-size: 15px;
+  }
+  #Bimeh .LargeText {
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 2em;
+  }
+
+  #Bimeh .btn {
+    font-size: 13px;
+    font-weight: 700;
+    padding: 10px 15px 10px 10px;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  #Bimeh .FormContainer {
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 30px;
+  }
+
+  .ColStart1 {
+    grid-column-start: unset;
+  }
+  .ColStart2 {
+    grid-column-start: unset;
+  }
+  .ColStart3 {
+    grid-column-start: unset;
+  }
+  .ColStart4 {
+    grid-column-start: unset;
+  }
+  .ColStart5 {
+    grid-column-start: unset;
+  }
+  .ColStart6 {
+    grid-column-start: unset;
+  }
+  .ColStart7 {
+    grid-column-start: unset;
+  }
+  .ColEnd2 {
+    grid-column-end: unset;
+  }
+  .ColEnd3 {
+    grid-column-end: unset;
+  }
+  .ColEnd4 {
+    grid-column-end: unset;
+  }
+  .ColEnd5 {
+    grid-column-end: unset;
+  }
+  .ColEnd6 {
+    grid-column-end: unset;
+  }
+  .ColEnd7 {
+    grid-column-end: unset;
+  }
+  .ColEnd8 {
+    grid-column-end: unset;
+  }
+
+  #Bimeh .CloseBut {
+    margin: 2px 5px 0 10px;
+  }
+
+  .ErrorMessageBox {
+    font-size: var(--SmallFontSizeErrorMsg);
+  }
+}
+
+@import "../components//Page1.css";
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes shake {
+  0% {
+    transform: translate(3px, 0);
+  }
+  50% {
+    transform: translate(-3px, 0);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+@-moz-keyframes shake {
+  0% {
+    -moz-transform: translate(3px, 0);
+  }
+  50% {
+    -moz-transform: translate(-3px, 0);
+  }
+  100% {
+    -moz-transform: translate(0, 0);
+  }
+}
+
+@-webkit-keyframes shake {
+  0% {
+    -webkit-transform: translate(3px, 0);
+  }
+  50% {
+    -webkit-transform: translate(-3px, 0);
+  }
+  100% {
+    -webkit-transform: translate(0, 0);
+  }
+}
+
+@-ms-keyframes shake {
+  0% {
+    -ms-transform: translate(3px, 0);
+  }
+  50% {
+    -ms-transform: translate(-3px, 0);
+  }
+  100% {
+    -ms-transform: translate(0, 0);
+  }
+}
+
+@-o-keyframes shake {
+  0% {
+    -o-transform: translate(3px, 0);
+  }
+  50% {
+    -o-transform: translate(-3px, 0);
+  }
+  100% {
+    -o-transform: translate(0, 0);
+  }
+}
