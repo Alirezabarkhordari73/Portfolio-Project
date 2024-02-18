@@ -1,0 +1,141 @@
+.LSelectBox {
+  font-size: 15px;
+  font-weight: 500;
+  color: #bdbdbd;
+  width: 100%;
+  outline: none; /*disable default focus border*/
+  /* margin-top: 1em; */
+}
+
+.LSelectBox:focus-within {
+  color: black;
+}
+
+.LSelectBox .LSelectBoxButton {
+  position: relative;
+  font-variation-settings: "dots" 3;
+  height: 3.33em;
+  width: 100%;
+  border: 1px solid #a8a8a8;
+  border-radius: 10px;
+  background-color: white;
+  padding: 10px 12px 10px 20px;
+}
+
+.LSelectBox .LSelectBoxButton span:first-child {
+  position: absolute;
+  padding-left: 0.6em;
+  padding-right: 0.6em;
+  height: 1.6em;
+  top: -0.8em;
+  right: 20px;
+  font-size: 0.8em;
+  background-image: linear-gradient(white, white);
+  background-size: 100% 4px;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.LSelectBox .LSelectOptions {
+  position: absolute;
+  background: white;
+  border-radius: 10px;
+  left: 0;
+  right: 0;
+  padding: 10px;
+  z-index: 2;
+  top: 3.5em;
+  max-height: 200px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  scrollbar-color: #ef1b33 #0000;
+  scrollbar-width: thin;
+  box-shadow: 0px 2px 5px 1px rgba(0, 0, 0, 0.2);
+}
+
+.LSelectBox .LSelectOptions::-webkit-scrollbar {
+  /*only for chrome*/
+  width: 7px;
+  height: 8px;
+  background-color: #0000;
+}
+
+.LSelectBox .LSelectOptions::-webkit-scrollbar-thumb {
+  /*only for chrome*/
+  background: #ef1b33;
+  border-radius: 3px;
+}
+
+.LSelectBox .LSelectBoxArrow {
+  position: absolute;
+  left: 20px;
+  top: calc(50% - 5px);
+  width: 14px;
+  height: 8px;
+  stroke-width: 2px;
+  stroke: #00000080;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  pointer-events: none;
+  transform: rotate(0);
+  transition: transform 0.6s;
+}
+
+.LSelectBox .LSelectBoxButton.Open .LSelectBoxArrow {
+  transform: rotate(180deg);
+  transition: transform 0.6s;
+}
+
+.LSelectBox .LSelectBoxButton:hover {
+  color: black;
+}
+.LSelectBox .LSelectBoxButton:hover svg {
+  stroke: black;
+}
+
+.LSelectBox .LSelectBox:focus .LSelectBoxButton,
+.LSelectBox .LSelectBox:focus-within .LSelectBoxButton {
+  box-shadow: 0px 0px 3px #ef1b33;
+}
+
+.LSelectBox .LSelectOption {
+  border-radius: 5px;
+  padding: 6px 10px 6px 6px;
+  cursor: pointer;
+}
+
+.LSelectBox .LSelectOption.hovered,
+.LSelectBox .checkbox.hovered {
+  color: #ef1b33;
+  transform-origin: 100% 50%;
+  transform: scale(1.08);
+  transition: transform 0.4s;
+  /*background: #EF1B3380;*/
+}
+
+.LSelectBoxButton input {
+  border: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .LSelectBox .LSelectBox {
+    font-size: 12px;
+    min-width: 160px;
+    max-width: 250px;
+  }
+  .LSelectBox .LSelectBoxButton {
+    height: 3em;
+    padding: 10px 10px 10px 15px;
+    /* margin: 5px; */
+  }
+  .LSelectBox .LSelectBoxArrow {
+    left: 10px;
+  }
+  .LSelectBox .LSelectOptions {
+    top: 41px;
+  }
+  .LSelectBox .LSelectOption {
+    font-size: 12px;
+  }
+}
